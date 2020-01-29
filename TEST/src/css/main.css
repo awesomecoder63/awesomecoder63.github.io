@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('/src/fonts/BebasNeueBold.woff2') format('woff2'),
+        url('/src/fonts/BebasNeueBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl 700';
+    src: url('/src/fonts/MuseoSansCyrl-700.woff2') format('woff2'),
+        url('/src/fonts/MuseoSansCyrl-700.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl 300';
+    src: url('/src/fonts/MuseoSansCyrl-300.woff2') format('woff2'),
+        url('/src/fonts/MuseoSansCyrl-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+/* Основные стили */
+.wrapper {
+    margin: 0 auto;
+    max-width: 1470px;
+}
+body {
+    font-family: 'Museo Sans Cyrl 300';
+    color: #303030;
+    font-size: 18px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+/* Стили шапки */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    color: honeydew;
+}
+.header-active {
+    background-color: #FFFFFF;
+    color: black;
+}
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: none;
+}
+.header-body {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    align-items: center;
+}
+.header-logo {
+    background: url(/src/img/LOGO.svg);
+    width: 219px;
+    height: 58px;
+}
+.header-logo-active {
+    background: url(/src/img/LOGO-active.svg);
+}
+.header-list {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.header-list li {
+    list-style: none;
+    position: relative;
+    margin-right: 28px;
+}
+.inst {
+    background: url(/src/img/instagram.png);
+    height: 34px;
+    width: 34px;
+}
+.vk {
+    background: url(/src/img/vk.png);
+    height: 34px;
+    width: 34px;
+}
+.tel a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+.tel-active a {
+    color: black;
+}
+.tel::before {
+    content: '';
+    display: block;
+    background: url(/src/img/phone.png);
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    left: -50px;
+}
+.burger-button {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+}
+.burger-button::after {
+    content: '';
+    background-color: #FFFFFF;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+}
+.burger-button span {
+    height: 2px;
+    background-color: #FFFFFF;
+    width: 100%;
+    position: absolute;
+    height: 2px;
+}
+.burger-button span.active {
+    transform: rotate(45deg);
+    color: black !important;
+}
+.burger-button.active::after {
+    transform: rotate(-45deg);
+    color: black;
+}
+
+.burger-wrapper {
+    transition: 2s;
+    display: none;
+}
+.burger-wrapper-active {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.9);
+}
+.burger-menu li{
+    list-style: none;
+    color: #303030; 
+    font-size: 50px;
+    padding-top: 40px;
+}
+
+
+/* Стили главного экрана */
+.main-screen {
+    background: url(./src/img/main-bg.jpg) center center;
+    background-size: cover;
+    color: #FFFFFF;
+    padding-bottom: 85px;
+}
+.main-screen-text {
+    padding-top: 260px;
+}
+.main-screen-text h1 {
+    font-family: 'Bebas Neue';
+    text-transform: uppercase;
+    font-size: 90px;
+}
+.main-screen-text p {
+    font-family: 'Museo Sans Cyrl 300';
+    font-size: 50px;
+    padding-top: 10px;
+}
+.main-screen-text p span {
+    color: #FF3754;
+}
+.main-screen-list {
+    list-style-image: url(./src/img/european-union.png);
+    font-size: 24px;
+    padding-top: 60px;
+}
+.main-screen-list li {
+    padding-top: 30px;
+    position: relative;
+    margin-left: 100px;
+    padding-left: 30px;
+}
+.main-screen-list li:first-child {
+    list-style-image: url(./src/img/worldwide.png) ;
+}
+.main-screen-list li:first-child::before {
+    background: url(./src/img/award1.png);
+}
+.main-screen-list li:last-child {
+    list-style-image: url(./src/img/russia.png) ;
+}
+.main-screen-list li::before {
+    content: '';
+    position: absolute;
+    background: url(./src/img/award2.png);
+    height: 70px;
+    width: 70px;
+    top: 60%;
+    left: -100px;
+    transform: translateY(-50%);
+ }
+ .main-screen-list li:nth-child(3)::before {
+    background: url(./src/img/award3.png) center no-repeat;
+ }
+ .main-screen-button {
+    border: 1px solid #FF3754;
+    border-radius: 4px;
+    padding: 22px 60px;
+    background: #FF3754;
+    margin-left: 20px;
+    margin-top: 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.155em;
+    font-size: 19px;
+    color: #FFFFFF;
+ }
