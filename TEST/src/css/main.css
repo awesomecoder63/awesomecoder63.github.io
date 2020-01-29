@@ -1,23 +1,23 @@
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('/src/fonts/BebasNeueBold.woff2') format('woff2'),
-        url('/src/fonts/BebasNeueBold.woff') format('woff');
+    src: url('../fonts/BebasNeueBold.woff2') format('woff2'),
+        url('../fonts/BebasNeueBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Museo Sans Cyrl 700';
-    src: url('/src/fonts/MuseoSansCyrl-700.woff2') format('woff2'),
-        url('/src/fonts/MuseoSansCyrl-700.woff') format('woff');
+    src: url('../fonts/MuseoSansCyrl-700.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-700.woff') format('woff');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Museo Sans Cyrl 300';
-    src: url('/src/fonts/MuseoSansCyrl-300.woff2') format('woff2'),
-        url('/src/fonts/MuseoSansCyrl-300.woff') format('woff');
+    src: url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-300.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
@@ -71,12 +71,12 @@ h1, h2, h3, h4 {
     align-items: center;
 }
 .header-logo {
-    background: url(/src/img/LOGO.svg);
+    background: url(../img/LOGO.svg);
     width: 219px;
     height: 58px;
 }
 .header-logo-active {
-    background: url(/src/img/LOGO-active.svg);
+    background: url(../img/LOGO-active.svg);
 }
 .header-list {
 display: flex;
@@ -89,12 +89,12 @@ align-items: center;
     margin-right: 28px;
 }
 .inst {
-    background: url(/src/img/instagram.png);
+    background: url(../img/instagram.png);
     height: 34px;
     width: 34px;
 }
 .vk {
-    background: url(/src/img/vk.png);
+    background: url(../img/vk.png);
     height: 34px;
     width: 34px;
 }
@@ -109,7 +109,7 @@ align-items: center;
 .tel::before {
     content: '';
     display: block;
-    background: url(/src/img/phone.png);
+    background: url(../img/phone.png);
     height: 24px;
     width: 24px;
     position: absolute;
@@ -169,7 +169,7 @@ align-items: center;
 
 /* Стили главного экрана */
 .main-screen {
-    background: url(./src/img/main-bg.jpg) center center;
+    background: url(../img/main-bg.jpg) center center;
     background-size: cover;
     color: #FFFFFF;
     padding-bottom: 85px;
@@ -191,7 +191,7 @@ align-items: center;
     color: #FF3754;
 }
 .main-screen-list {
-    list-style-image: url(./src/img/european-union.png);
+    list-style-image: url(../img/european-union.png);
     font-size: 24px;
     padding-top: 60px;
 }
@@ -202,18 +202,18 @@ align-items: center;
     padding-left: 30px;
 }
 .main-screen-list li:first-child {
-    list-style-image: url(./src/img/worldwide.png) ;
+    list-style-image: url(../img/worldwide.png) ;
 }
 .main-screen-list li:first-child::before {
-    background: url(./src/img/award1.png);
+    background: url(../img/award1.png);
 }
 .main-screen-list li:last-child {
-    list-style-image: url(./src/img/russia.png) ;
+    list-style-image: url(../img/russia.png) ;
 }
 .main-screen-list li::before {
     content: '';
     position: absolute;
-    background: url(./src/img/award2.png);
+    background: url(../img/award2.png);
     height: 70px;
     width: 70px;
     top: 60%;
@@ -221,7 +221,7 @@ align-items: center;
     transform: translateY(-50%);
  }
  .main-screen-list li:nth-child(3)::before {
-    background: url(./src/img/award3.png) center no-repeat;
+    background: url(../img/award3.png) center no-repeat;
  }
  .main-screen-button {
     border: 1px solid #FF3754;
